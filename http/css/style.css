@@ -1,0 +1,144 @@
+body {
+  background-color: #eee;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+.custom-color-white-blue {
+  background-color: #d1e2f9;
+}
+.custom-color-blue {
+  background-color: #acccfc;
+}
+.custom-color-purple {
+  background-color: #b393ed;
+}
+.custom-color-pink {
+  background-color: #e979b9;
+}
+.custom-color-green {
+  background-color: #b1dbaf;
+}
+.custom-color-green-teal {
+  background-color: #4e894b;
+}
+.custom-color-gray {
+  background-color: #d2d2d2;
+}
+.custom-color-white-gray {
+  background-color: #f0f2f2;
+}
+.custom-color-orange-700 {
+  background-color: #bb9263;
+}
+.custom-color-red-700 {
+  background-color: #e74040;
+}
+
+
+
+
+/* картинка на странице увеличение*/
+.minimized {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+
+.minimized:hover {
+  border: 1px solid yellow;
+}
+
+/* увеличенная картинка */
+#magnify {
+  display: none;
+
+  /* position: absolute or fixed; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 70%;
+  height: auto;
+  z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(/file/images/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+/* .vir_right {
+  text-align: right;
+}
+.vir_center {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .header {
+    text-align: center;
+    margin: auto;
+    }
+.inheader {
+  display: inline-block;
+  margin: auto;
+  padding: 15px;
+  width: auto;
+  height:auto;
+  border:5px solid #D3D3D3;
+  text-align: left;
+  box-shadow: 0 0 50px #777;
+	border-radius: 10px;
+
+} */
